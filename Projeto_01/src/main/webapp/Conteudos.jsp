@@ -3,7 +3,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Conteúdos</title>
+<title>ConteÃºdos</title>
 <link
 	href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
 	rel="stylesheet">
@@ -15,14 +15,14 @@
 </head>
 <body>
 	<div class="container mt-4">
-		<h1>Meus Conteúdos</h1>
+		<h1>Meus ConteÃºdos</h1>
 
 		<table class="table table-striped">
 			<thead>
 				<tr>
 					<th>ID</th>
-					<th>Conteúdo</th>
-					<th>Ação</th>
+					<th>ConteÃºdo</th>
+					<th>AÃ§Ã£o</th>
 				</tr>
 			</thead>
 			<tbody id="conteudoTable">
@@ -30,7 +30,7 @@
 					<tr>
 						<td>${conteudo.id}</td>
 						<td>${conteudo.conteudos[0]}</td>
-						<!-- Acessando o conteúdo corretamente -->
+						
 						<td>
 							<form action="Tela_Conteudos" method="post"
 								style="display: inline;">
@@ -44,7 +44,7 @@
     <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title" id="editModalLabel">Editar Conteúdo</h5>
+                <h5 class="modal-title" id="editModalLabel">Editar ConteÃºdo</h5>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
@@ -52,10 +52,10 @@
                     <input type="hidden" name="action" value="edit">
                     <input type="hidden" name="conteudoId" id="editConteudoId">
                     <div class="mb-3">
-                        <label for="novoConteudo" class="form-label">Novo Conteúdo</label>
+                        <label for="novoConteudo" class="form-label">Novo ConteÃºdo</label>
                         <input type="text" class="form-control" id="novoConteudo" name="novoConteudo">
                     </div>
-                    <button type="submit" class="btn btn-primary">Salvar Alterações</button>
+                    <button type="submit" class="btn btn-primary">Salvar AlteraÃ§Ãµes</button>
                 </form>
             </div>
         </div>
@@ -70,10 +70,10 @@
 		<form action="Dpslogado" method="post">
 			<div class="mb-3">
 				<input type="text" name="conteudo" class="form-control"
-					placeholder="Novo conteúdo" required />
+					placeholder="Novo conteÃºdo" required />
 			</div>
 			<button type="submit" class="btn btn-success">Adicionar
-				Conteúdo</button>
+				ConteÃºdo</button>
 		</form>
 	</div>
 	<script>
